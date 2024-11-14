@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- REMIX ICONS -->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+      <!-- Font Awesome CDN (Facebook/Twitter/Whatsapp icons) -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- CSS -->
+      <link rel="stylesheet" href="./css/styles.css">
+      <title>ERB Travel</title>
+   </head>
+   <body>
+      <!-- Header section -->
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav-data">
+               <a href="index.html" class="nav-logo">
+                  <i class="ri-planet-line"></i> ERB Travel
+               </a>
+               
+               <div class="nav-toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav-burger"></i>
+                  <i class="ri-close-line nav-close"></i>
+               </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav-menu" id="nav-menu">
+               <ul class="nav-list">
+                  <li><a href="index.html" class="nav-link">Home</a></li>
+
+                  <!--=============== DROPDOWN 1 (DESTINATIONS) ===============-->
+                  <li class="dropdown-item">
+                     <div class="nav-link">
+                        Destinations <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                     </div>
+
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a href="capp.html" class="dropdown-link">Cappadocia, Turkey</a>
+                        </li>
+                        <li>
+                           <a href="easter.html" class="dropdown-link">Easter Island, Chile</a>
+                        </li>
+                        <li>
+                           <a href="uyuni.html" class="dropdown-link">Salar de Uyuni, Bolivia</a>
+                        </li>
+
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown-subitem">
+                           <div class="dropdown-link">France
+                              <i class="ri-add-line dropdown-add"></i>
+                           </div>
+                           <ul class="dropdown-submenu">
+                              <li>
+                                 <a href="bord.html" class="dropdown-sublink">Bordeaux</a>
+                              </li>
+                              <li>
+                                 <a href="cour.html" class="dropdown-sublink">Courchevel</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+                  <li><a href="tours.html" class="nav-link">Tours</a></li>
+                  <li><a href="about.html" class="nav-link">About Us</a></li>
+                  <li><a href="contact.html" class="nav-link">Get in Touch</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+
+      <!-- About section -->
+      <section>
+         <div class="section-title">
+            <h2>Easter Island, Chile</h2>
+         </div>
+
+         <div class="section-center about-center">
+            <div class="about-img">
+               <img src="./images/chile/easter_island.jpg" class="about-photo" alt="awesome landscape"/>
+            </div>
+            <article class="about-info">
+               <h3>why visit?</h3>
+               <p>If you’re seeking a transformative experience, Easter Island’s combination of historical significance, breathtaking scenery, and the feeling of being on the edge of the world creates a journey that’s not just about visiting a destination but connecting with something much deeper," says Spencer Jones, an OvationNetwork travel advisor.</p>
+               <h3>who should go?</h3>
+               <p>Families, couples, friends, multi-generational travelers – and anyone looking to experience this special destination.</p>
+               <h3>don't miss!!</h3>
+               <p>The iconic Moai statues, which are massive stone figures. Each Moai represents an important ancestor and embodies the islanders’ beliefs about lineage, power, and connection to their past. Rano a Raraku has the best and most iconic statues. Also, catch the Kari Kari dance group performing traditional Polynesian dances in a local setting.</p>
+            </article>
+         </div>
+      </section>
+
+      <!-- Footer section -->
+      <footer class="section footer">
+         <ul class="footer-icons">
+            <li><a href="https://facebook.com" class="footer-icon"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com" class="footer-icon"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://whatsapp.com" class="footer-icon"><i class="fa-brands fa-whatsapp"></i></a></li>
+         </ul>
+         <p class="copyright">
+            copyright &copy; ERB Travel Company
+            <span id="date"></span> all right reserved
+         </p>
+      </footer>
+
+      <!-- Main Javascript -->
+      <script src="./js/main.js"></script>
+   </body>
+</html>

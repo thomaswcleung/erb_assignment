@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- REMIX ICONS -->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+      <!-- Font Awesome CDN (Facebook/Twitter/Whatsapp icons) -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- CSS -->
+      <link rel="stylesheet" href="./css/styles.css">
+      <title>ERB Travel</title>
+   </head>
+   <body>
+      <!-- Header section -->
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav-data">
+               <a href="index.html" class="nav-logo">
+                  <i class="ri-planet-line"></i> ERB Travel
+               </a>
+               
+               <div class="nav-toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav-burger"></i>
+                  <i class="ri-close-line nav-close"></i>
+               </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav-menu" id="nav-menu">
+               <ul class="nav-list">
+                  <li><a href="index.html" class="nav-link">Home</a></li>
+
+                  <!--=============== DROPDOWN 1 (DESTINATIONS) ===============-->
+                  <li class="dropdown-item">
+                     <div class="nav-link">
+                        Destinations <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                     </div>
+
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a href="capp.html" class="dropdown-link">Cappadocia, Turkey</a>
+                        </li>
+                        <li>
+                           <a href="easter.html" class="dropdown-link">Easter Island, Chile</a>
+                        </li>
+                        <li>
+                           <a href="uyuni.html" class="dropdown-link">Salar de Uyuni, Bolivia</a>
+                        </li>
+
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown-subitem">
+                           <div class="dropdown-link">France
+                              <i class="ri-add-line dropdown-add"></i>
+                           </div>
+                           <ul class="dropdown-submenu">
+                              <li>
+                                 <a href="bord.html" class="dropdown-sublink">Bordeaux</a>
+                              </li>
+                              <li>
+                                 <a href="cour.html" class="dropdown-sublink">Courchevel</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+                  <li><a href="tours.html" class="nav-link">Tours</a></li>
+                  <li><a href="about.html" class="nav-link">About Us</a></li>
+                  <li><a href="contact.html" class="nav-link">Get in Touch</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+
+      <!-- Tours section -->
+      <!-- Cappadocia, Türkiye -->
+      <section class="section" id="tours">
+         <div class="section-title">
+            <h1>Cappadocia, Türkiye</h1>
+         </div>
+         <div class="section-center featured-center">
+            <!-- first tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/turkey/capp_tour1.jpg" alt="" class="tour-img">
+                  <p class="tour-sales">Best seller</p>
+               </div>
+               <div class="tour-info">
+                  <h4>France Tours</h4>
+                  <p>Bordeaux Authentic Tour</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>1, 2 or 3 days</li>
+                        <li>from $350</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+            <!-- second tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/turkey/capp_tour2.jpg" alt="" class="tour-img">
+                  <!-- <p class="tour-date">Aug 26th,2024</p> -->
+               </div>
+               <div class="tour-info">
+                  <h4>Turkey Tours</h4>
+                  <p>4 Days Turkey Tour: Ephesus, Pamukkale, Cappadocia</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>4 days</li>
+                        <li>from $1200</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+            <!-- third tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/turkey/capp_tour3.jpg" alt="" class="tour-img">
+                  <!-- <p class="tour-date">Aug 26th,2024</p> -->
+               </div>
+               <div class="tour-info">
+                  <h4>Turkey Tours</h4>
+                  <p>Private 2 Days Cappadocia Tour from Istanbul (Optional Hot Air Balloon)</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>2 days</li>
+                        <li>from $2000</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <!-- Eastern Island, Chile -->
+      <section class="section" id="tours">
+         <div class="section-title">
+            <h1>Easter Island, Chile</h1>
+         </div>
+         <div class="section-center featured-center">
+            <!-- first tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/chile/easter_tour1.jpg" alt="" class="tour-img">
+                  <p class="tour-sales">Best seller</p>
+               </div>
+               <div class="tour-info">
+                  <h4>Chile Tours</h4>
+                  <p>Santiago and Easter Island Tour</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>8 days/7 nights</li>
+                        <li>from US$1800</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+            <!-- second tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/chile/easter_tour2.jpg" alt="" class="tour-img">
+                  <!-- <p class="tour-date">Aug 26th,2024</p> -->
+               </div>
+               <div class="tour-info">
+                  <h4>Chile Tours</h4>
+                  <p>Eastern Island Adventurer</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>5 days</li>
+                        <li>from US$850</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+            <!-- third tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/chile/easter_tour3.jpg" alt="" class="tour-img">
+                  <!-- <p class="tour-date">Aug 26th,2024</p> -->
+               </div>
+               <div class="tour-info">
+                  <h4>Chile Tours</h4>
+                  <p>Explora Eastern Island</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>5 days</li>
+                        <li>from US$1500</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <!-- Salar de Uyuni, Bolivia -->
+      <section class="section" id="tours">
+         <div class="section-title">
+            <h1>Salar De Uyuni, Bolivia</h1>
+         </div>
+         <div class="section-center featured-center">
+            <!-- first tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/bolivia/uyuni_tour1.jpg" alt="" class="tour-img">
+                  <p class="tour-sales">Best seller</p>
+               </div>
+               <div class="tour-info">
+                  <h4>Salt Flats Tours</h4>
+                  <p>Uyuni Salt Flats Highlights Jeep Tour</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>3 days</li>
+                        <li>from US$1800</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+            <!-- second tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/bolivia/uyuni_tour2.jpg" alt="" class="tour-img">
+                  <p class="tour-sales">Best seller</p>
+               </div>
+               <div class="tour-info">
+                  <h4>Salt Flats Tours</h4>
+                  <p>Uyuni Salt Flats 2 Full Days Tour + Sunset + Reflects Mirror Effect</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>2 days</li>
+                        <li>from US$1500</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+            <!-- third tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/bolivia/uyuni_tour3.jpg" alt="" class="tour-img">
+                  <!-- <p class="tour-date">Aug 26th,2024</p> -->
+               </div>
+               <div class="tour-info">
+                  <h4>Salt Flats Tours</h4>
+                  <p>Uyuni Salt Flats Tour by Bus</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>3 days</li>
+                        <li>from US$900</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <!-- Bordeaux, France -->
+      <section class="section" id="tours">
+         <div class="section-title">
+            <h1>Bordeaux, France</h1>
+         </div>
+         <div class="section-center featured-center">
+            <!-- first tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/france/bordeaux/bord-tour1.jpg" alt="" class="tour-img">
+                  <!-- <p class="tour-date">Aug 26th,2024</p> -->
+               </div>
+               <div class="tour-info">
+                  <h4>France Tours</h4>
+                  <p>Bordeaux Bliss Getaway</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>5 days</li>
+                        <li>from US$1200</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+            <!-- second tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/france/bordeaux/bord-tour2.jpg" alt="" class="tour-img">
+                  <p class="tour-sales">Best seller</p>
+               </div>
+               <div class="tour-info">
+                  <h4>France Wine Tours</h4>
+                  <p>Château & Wine Discovery Tour</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>4 days</li>
+                        <li>from US$2000</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+            <!-- third tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/france/bordeaux/bord-tour3.jpg" alt="" class="tour-img">
+                  <p class="tour-sales">Best seller</p>
+               </div>
+               <div class="tour-info">
+                  <h4>France Tours</h4>
+                  <p>Bordeaux Art & Culture Tour</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>5 days</li>
+                        <li>from US$1800</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <!-- Courchevel, France -->
+      <section class="section" id="tours">
+         <div class="section-title">
+            <h1>Courchevel, France</h1>
+         </div>
+         <div class="section-center featured-center">
+            <!-- first tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/france/courchevel/cc_tour1.jpg" alt="" class="tour-img">
+                  <!-- <p class="tour-date">Aug 26th,2024</p> -->
+               </div>
+               <div class="tour-info">
+                  <h4>France Ski/Tours</h4>
+                  <p>Snow Adventure Escape</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>5 days</li>
+                        <li>from US$1200</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+            <!-- second tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/france/courchevel/cc_tour2.jpg" alt="" class="tour-img">
+                  <p class="tour-sales">Best seller</p>
+               </div>
+               <div class="tour-info">
+                  <h4>France Ski/Tours</h4>
+                  <p>Alpine Thrills Experience</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>4 days</li>
+                        <li>from US$2000</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+            <!-- third tour  -->
+            <article class="tour-card">
+               <div class="tour-img-container">
+                  <img src="./images/france/courchevel/cc_tour3.jpg" alt="" class="tour-img">
+                  <!-- <p class="tour-date">Aug 26th,2024</p> -->
+               </div>
+               <div class="tour-info">
+                  <h4>France Ski/Tours</h4>
+                  <p>Ski and Chill Retreat</p>
+                  <div class="tour-footer">
+                     <ul class="tour-footer-info">
+                        <li>5 days</li>
+                        <li>from US$1800</li>
+                     </ul>
+                     <ul class="tour-footer-info">
+                        <li>Rating 
+                           <span style="font-size:1em;color:gold;">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <!-- Footer section -->
+      <footer class="section footer">
+         <ul class="footer-icons">
+            <li><a href="https://facebook.com" class="footer-icon"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com" class="footer-icon"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://whatsapp.com" class="footer-icon"><i class="fa-brands fa-whatsapp"></i></a></li>
+         </ul>
+         <p class="copyright">
+            copyright &copy; ERB Travel Company
+            <span id="date"></span> all right reserved
+         </p>
+      </footer>
+
+      <!-- Main Javascript -->
+      <script src="./js/main.js"></script>
+   </body>
+</html>

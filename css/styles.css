@@ -1,0 +1,774 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --header-height: 3.5rem;
+
+    /* define primary shade  */
+    --clr-primary-1: #ecffff;
+    --clr-primary-2: #cffbfe;
+    --clr-primary-3: #a5f6fc;
+    --clr-primary-4: #6cedf9;
+    --clr-primary-5: #22d9ee;
+    --clr-primary-6: #06bcd4;
+    --clr-primary-7: #0896b2;
+    --clr-primary-8: #0e7890;
+    --clr-primary-9: #156175;
+    --clr-primary-10: #165063;
+    --clr-primary-11: #083544;    
+
+    /* define gray shade  */
+    /* for paragraph  */
+    --clr-gray-1: #f6f6f6;
+    --clr-gray-2: #efefef;
+    --clr-gray-3: #dbdbdb;
+    --clr-gray-4: #c6c6c6;
+    --clr-gray-5: #aeaeae;
+    --clr-gray-6: #898989;
+    /* for headings  */
+    --clr-gray-7: #707070;
+    --clr-gray-8: #575757;
+    --clr-gray-9: #464646;
+    --clr-gray-10: #3e3e3e;
+
+    --clr-white:#fff;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    --navbar-Height: 4rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+    --black-color: hsl(220, 24%, 12%);
+    --black-color-light: hsl(220, 24%, 15%);
+    --black-color-lighten: hsl(220, 20%, 18%);
+    --white-color: #fff;
+    --cyan-color: hsl(180, 100%, 50%);
+    --body-color: hsl(220, 100%, 97%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --normal-font-size: .938rem;
+
+  /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1024px) {
+  :root {
+    --normal-font-size: 1rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+}
+
+ul {
+  list-style: none;
+  /* Color highlighting when pressed on mobile devices */
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=============== SECTION FOR ABOUT (START) =============*/
+.section-title {
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+/* About section 1 - Image */
+@media (min-width: 768px) {
+  .about-photo {
+      width: 100%;
+      height: 100%;
+      position: relative;
+  }
+  
+  .about-info {
+    margin-bottom: 10px;
+    h3 {
+        text-transform: uppercase;
+    }
+    p {
+        margin: 20px;
+    }
+  }
+  
+  .about-img {
+    position: relative;
+  }
+  
+  .about-img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.5rem solid var(--cyan-color);
+    box-sizing: border-box;
+    top: -1.5rem;
+    left: -1.5rem;
+    }
+  }
+
+/* About section 2 - Text */
+@media(max-width: 768px) {
+  .about-center {
+      max-width: 768px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  
+  .about-photo {
+      width: 100%;
+      height: 75%;
+  }
+  
+  .about-info {
+      margin-bottom: 10px;
+      h3 {
+          text-transform: uppercase;
+      }
+      p {
+          margin: 20px;
+      }
+  }
+}
+
+.grid-section {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.grid-item {
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Responsive layout */
+@media (min-width: 800px) {
+  .grid-container {
+      grid-template-columns: repeat(1fr);
+  }
+}
+/*=============== SECTION FOR ABOUT (END) ===============*/
+
+/*=============== SECTION FOR TOURS (START) ===============*/
+@media (min-width: 768px) {
+  .section-center.featured-center {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1170px;
+      justify-content: space-between;
+  }
+  
+  .tour-card {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      background: var(--clr-gray-1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 1170px;
+      margin-bottom: 20px;
+  }
+  
+  .tour-card:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transform: scale(1.02);
+  }
+  
+  .tour-img-container {
+      flex: 1 0 30%;
+      position: relative;
+      height: 13rem;
+  }
+  
+  .tour-img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 2rem;;
+  }
+  
+  .tour-date {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background: var(--clr-primary-3);
+      color: var(--clr-gray-9);
+      text-transform: capitalize;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+  }
+
+  .tour-sales {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgb(253, 99, 99);
+    color: var(--clr-gray-9);
+    text-transform: capitalize;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  .tour-info {
+      padding: 1.25rem 1.5rem;
+  }
+  
+  .tour-footer {
+      margin-top: 10px;
+  }
+  
+  .tour-footer-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  
+  .tour-footer-info li {
+      text-transform: capitalize;
+      color: var(--clr-primary-5);
+      font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 768px){
+  .section-center.featured-center {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .tour-card {
+      width: 98%;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      background: var(--clr-gray-1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 1170px;
+      margin-bottom: 20px;
+  }
+
+  .tour-card:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transform: scale(1.02);
+  }
+
+  .tour-img-container {
+      flex: 1 0 30%;
+      position: relative;
+      height: calc(100vh - 4rem - 12rem);
+  }
+
+  .tour-img {
+      width: 100%;
+      height: auto;
+  }
+
+  .tour-date {
+      position: absolute;
+      right: 0;
+      bottom: 5px;
+      background: var(--clr-primary-3);
+      color: var(--clr-gray-9);
+      text-transform: capitalize;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+  }
+
+  .tour-info {
+      padding: 1.25rem 1.5rem;
+      .h4 {
+          font-size: 1rem;
+      }
+  }
+  
+  .tour-footer {
+      margin-top: 10px;
+  }
+  
+  .tour-footer-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  
+  .tour-footer-info li {
+      text-transform: capitalize;
+      color: var(--clr-primary-5);
+      font-size: 0.8rem;
+  }
+}
+/*=============== SECTION FOR TOURS (END) ===============*/
+
+/*=============== SECTION FOR HERO (START) =============*/
+.hero {
+  background: url(../images/balloon.jpg) no-repeat top center / cover;
+  height: calc(100vh - 3rem);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(56, 165, 238, 0.5);
+}
+
+.main-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  padding: 0.2rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+
+/* .hero .btn {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  opacity: 0.9;
+  background: #333;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  cursor: pointer;
+} */
+/*=============== SECTION FOR HERO (START) =============*/
+
+/*=============== SECTION FOR FOOTER (START) =============*/
+.footer {
+  background: var(--clr-gray-10);
+  margin-top: 2rem;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+  
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+}
+  
+.footer-link:hover {
+  color: var(--clr-primary-5);
+}
+  
+.footer-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: var(--clr-white);
+  transition: var(--transition);
+}
+
+.footer-icon:hover {
+  color: var(--clr-primary-5);
+}
+
+.copyright {
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  color: var(--clr-white);
+  padding-bottom: 0.5rem;
+}
+
+.copyright span {
+  margin-left: 0.5rem;
+}
+/*=============== SECTION FOR FOOTER (END) ===============*/
+
+/*=============== SECTION FOR CONTACT US FORM (START) ===============*/
+.contact-section {
+    width: 100%;
+    max-width: 500px; /* Max width for the form */
+    padding: 2px;
+}
+
+.contact-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.contact-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button.btn {
+    width: 100%;
+    padding: 10px;
+    /* background-color: #007bff; */
+    background-color: var(--black-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+/*=============== SECTION FOR CONTACT US FORM (END) ===============*/
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--black-color);
+  box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+  z-index: var(--z-fixed);
+}
+
+/*=============== NAV ===============*/
+.nav {
+  height: var(--header-height);
+}
+
+.nav-logo, 
+.nav-burger, 
+.nav-close {
+  color: var(--white-color);
+}
+
+.nav-data {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .25rem;
+  font-weight: var(--font-semi-bold);
+  /* Color highlighting when pressed on mobile devices */
+  /*-webkit-tap-highlight-color: transparent;*/
+}
+
+.nav-logo i {
+  font-weight: initial;
+  font-size: 1.25rem;
+}
+
+.nav-toggle {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.nav-burger, 
+.nav-close {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  inset: 0;
+  margin: auto;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: opacity .1s, transform .4s;
+}
+
+.nav-close {
+  opacity: 0;
+}
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 1118px) {
+  .nav-menu {
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    transition: top .4s, opacity .3s;
+  }
+  .nav-menu::-webkit-scrollbar {
+    width: 0;
+  }
+  .nav-list {
+    background-color: var(--black-color);
+    padding-top: 1rem;
+  }
+}
+
+.nav-link {
+  color: var(--white-color);
+  background-color: var(--black-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color .3s;
+}
+
+.nav-link:hover {
+  background-color: var(--black-color-light);
+}
+
+/* Show menu */
+.show-menu {
+  opacity: 1;
+  top: 3.5rem;
+  pointer-events: initial;
+}
+
+/* Show icon */
+.show-icon .nav-burger {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.show-icon .nav-close {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
+/*=============== DROPDOWN ===============*/
+.dropdown-item {
+  cursor: pointer;
+}
+
+.dropdown-arrow {
+  font-size: 1.25rem;
+  font-weight: initial;
+  transition: transform .4s;
+}
+
+.dropdown-link, 
+.dropdown-sublink {
+  padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+  color: var(--white-color);
+  background-color: var(--black-color-light);
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  font-weight: var(--font-semi-bold);
+  transition: background-color .3s;
+}
+
+.dropdown-link i, 
+.dropdown-sublink i {
+  font-size: 1.25rem;
+  font-weight: initial;
+}
+
+.dropdown-link:hover, 
+.dropdown-sublink:hover {
+  color: var(--cyan-color);
+  background-color: var(--black-color);
+}
+
+.dropdown-menu, 
+.dropdown-submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease-out;
+}
+
+/* Show dropdown menu & submenu */
+.dropdown-item:hover .dropdown-menu, 
+.dropdown-subitem:hover > .dropdown-submenu {
+  max-height: 1000px;
+  transition: max-height .4s ease-in;
+}
+
+/* Rotate dropdown icon */
+.dropdown-item:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/*=============== DROPDOWN SUBMENU ===============*/
+.dropdown-add {
+  margin-left: auto;
+}
+
+.dropdown-sublink {
+  background-color: var(--black-color-lighten);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .nav-link {
+    padding-inline: 1rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1118px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 2rem);
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-list {
+    height: 100%;
+    display: flex;
+    column-gap: 3rem;
+  }
+  .nav-link {
+    height: 100%;
+    padding: 0;
+    justify-content: initial;
+    column-gap: .25rem;
+  }
+  .nav-link:hover {
+    background-color: transparent;
+  }
+
+  .dropdown-item, 
+  .dropdown-subitem {
+    position: relative;
+  }
+
+  .dropdown-menu, 
+  .dropdown-submenu {
+    max-height: initial;
+    overflow: initial;
+    position: absolute;
+    left: 0;
+    top: 6rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s, top .3s;
+  }
+
+  .dropdown-link, 
+  .dropdown-sublink {
+    padding-inline: 1rem 3.5rem;
+  }
+
+  .dropdown-subitem .dropdown-link {
+    padding-inline: 1rem;
+  }
+
+  .dropdown-submenu {
+    position: absolute;
+    left: 100%;
+    top: .5rem;
+  }
+
+  /* Show dropdown menu */
+  .dropdown-item:hover .dropdown-menu {
+    opacity: 1;
+    top: 5.5rem;
+    pointer-events: initial;
+    transition: top .3s;
+  }
+
+  /* Show dropdown submenu */
+  .dropdown-subitem:hover > .dropdown-submenu {
+    opacity: 1;
+    top: 0;
+    pointer-events: initial;
+    transition: top .3s;
+  }
+}
